@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class PlayerColor : NetworkBehaviour
 {
-    [Networked]
-    public Color NetworkedColor { get; set; }
+    // [Networked]
+    // public Color NetworkedColor { get; set; }
     public MeshRenderer MeshRenderer;
 }

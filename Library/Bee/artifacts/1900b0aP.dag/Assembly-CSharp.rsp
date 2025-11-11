@@ -327,6 +327,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.62f2/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/Ball.cs"
 "Assets/Scripts/BasicSpawner.cs"
+"Assets/Scripts/HealthController.cs"
 "Assets/Scripts/NetworkInputData.cs"
 "Assets/Scripts/PhysxBall.cs"
 "Assets/Scripts/Player.cs"

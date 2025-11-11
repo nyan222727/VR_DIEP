@@ -2,13 +2,20 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp:
     - Ball
+    - HealthController
     - PhysxBall
     - Player
     - PlayerColor
     Assembly-CSharp.dll:
     - Ball
     - BasicSpawner
+    - HealthController
+    - PhysxBall
+    - Player
+    - PlayerColor
     Fusion.Addons.Physics:
+    - Fusion.Addons.Physics.NetworkRigidbody3D
+    Fusion.Addons.Physics.dll:
     - Fusion.Addons.Physics.NetworkRigidbody3D
     Fusion.Realtime.dll:
     - Fusion.Photon.Realtime.PhotonAppSettings
@@ -27,6 +34,8 @@ ScriptsOnlyBuild:
     - Fusion.Statistics.FusionStatsPanelHeader
     Fusion.Unity.Editor.dll:
     - Fusion.Editor.FusionEditorSkin
+    Fusion.Unity.dll:
+    - Fusion.NetworkCharacterController
     Unity.PlasticSCM.Editor.dll:
     - Unity.PlasticSCM.Editor.UVCSWindow
     Unity.Rider.Editor.dll:
@@ -198,51 +207,51 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16706}
     - Class: 114
-      Script: {instanceID: 16708}
+      Script: {instanceID: 16748}
     - Class: 114
-      Script: {instanceID: 16750}
+      Script: {instanceID: 17370}
     - Class: 114
-      Script: {instanceID: 17372}
+      Script: {instanceID: 17810}
     - Class: 114
-      Script: {instanceID: 17812}
+      Script: {instanceID: 17916}
     - Class: 114
-      Script: {instanceID: 17918}
+      Script: {instanceID: 18024}
     - Class: 114
-      Script: {instanceID: 18026}
+      Script: {instanceID: 18038}
     - Class: 114
-      Script: {instanceID: 18040}
+      Script: {instanceID: 18422}
     - Class: 114
-      Script: {instanceID: 18424}
+      Script: {instanceID: 18792}
     - Class: 114
-      Script: {instanceID: 18794}
+      Script: {instanceID: 19154}
     - Class: 114
-      Script: {instanceID: 19156}
+      Script: {instanceID: 19282}
     - Class: 114
-      Script: {instanceID: 19284}
+      Script: {instanceID: 19380}
     - Class: 114
-      Script: {instanceID: 19382}
+      Script: {instanceID: 19394}
     - Class: 114
-      Script: {instanceID: 19396}
+      Script: {instanceID: 19666}
     - Class: 114
-      Script: {instanceID: 19668}
+      Script: {instanceID: 20002}
     - Class: 114
-      Script: {instanceID: 20004}
+      Script: {instanceID: 20234}
     - Class: 114
-      Script: {instanceID: 20236}
+      Script: {instanceID: 20296}
     - Class: 114
-      Script: {instanceID: 20298}
+      Script: {instanceID: 20348}
     - Class: 114
-      Script: {instanceID: 20350}
+      Script: {instanceID: 20424}
     - Class: 114
-      Script: {instanceID: 20426}
+      Script: {instanceID: 20640}
     - Class: 114
-      Script: {instanceID: 20642}
+      Script: {instanceID: 20762}
     - Class: 114
-      Script: {instanceID: 20764}
+      Script: {instanceID: 21010}
     - Class: 114
-      Script: {instanceID: 21012}
+      Script: {instanceID: 21142}
     - Class: 114
-      Script: {instanceID: 21144}
+      Script: {instanceID: 21146}
     - Class: 114
       Script: {instanceID: 21148}
     - Class: 114
@@ -269,6 +278,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 23028}
     - Class: 114
       Script: {instanceID: 23066}
+    - Class: 114
+      Script: {instanceID: 24174}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -302,12 +313,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: ContentSizeFitter
-  - hash:
-      serializedVersion: 2
-      Hash: e7f01aac0b897c8dd7d34f82264dc9be
-    assemblyName: Fusion.Runtime.dll
-    namespaceName: Fusion
-    className: NetworkProjectConfigAsset
   - hash:
       serializedVersion: 2
       Hash: 915204dac8acad99f076d6e72ada0a0f
@@ -1162,6 +1167,12 @@ ScriptsOnlyBuild:
     className: NetworkObjectPrefabData
   - hash:
       serializedVersion: 2
+      Hash: e7f01aac0b897c8dd7d34f82264dc9be
+    assemblyName: Fusion.Runtime.dll
+    namespaceName: Fusion
+    className: NetworkProjectConfigAsset
+  - hash:
+      serializedVersion: 2
       Hash: c18b7a706e2a4e329ca8810463e15881
     assemblyName: Fusion.Runtime.dll
     namespaceName: Fusion
@@ -1270,7 +1281,7 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
-      Hash: c01d5177da9a8c8e854075e086ecdb59
+      Hash: 54cfbdf8e1d20d4bf21ba2c5b39f0b31
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerColor
@@ -1598,6 +1609,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: aa15ee3cb944441720ae214d8a8ded70
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: HealthController
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
