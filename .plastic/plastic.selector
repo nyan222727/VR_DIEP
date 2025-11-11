@@ -1,0 +1,4 @@
+repository "photon_fusion_host_mode_practice/photon_fusion_host_mode_practice@33263068182472@cloud"
+  path "/"
+    br "/main"
+    co "/main"
